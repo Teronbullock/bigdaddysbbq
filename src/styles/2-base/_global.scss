@@ -1,0 +1,96 @@
+/*
+  Global
+	========================================================================== 
+*/
+
+* {
+    clear: both;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+html,
+body,
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    background-color: #fff;
+}
+
+.hero,
+section,
+table {
+    width: 100%;
+}
+
+h2,
+h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+table {
+    margin: 0 0 1.5em;
+}
+
+tr {
+    border-bottom: 1px solid #eee;
+}
+
+td {
+    padding: 0.4em;
+}
+
+.hero__content,
+.location,
+.menu__content,
+.about__content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.menu__content {
+    margin-bottom: 1rem;
+}
+
+@media (min-width: $break-m) {
+    .hero__content,
+    .location,
+    .menu__content,
+    .about__content {
+        width: 80%;
+    }
+}
+
+@media (min-width: $break-l) {
+    .hero__content,
+    .location,
+    .menu__content,
+    .about__content {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: $break-xl) {
+    h3 {
+        margin-top: 0;
+    }
+
+    .hero__content,
+    .location,
+    .menu__content,
+    .about__content {
+        max-width: 1200px;
+    }
+}

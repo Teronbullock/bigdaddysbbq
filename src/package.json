@@ -1,0 +1,13 @@
+{
+  "name": "bigdaddysbbq",
+  "version": "1.0.0",
+  "description": "restaurant site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch styles:css",
+    "start": "npm run sass"
+  },
+  "author": "Terone Bullock",
+  "license": "ISC"
+}

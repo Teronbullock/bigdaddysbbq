@@ -1,0 +1,19 @@
+/*
+  Footer
+	========================================================================== 
+*/
+.footer {
+    background-color: $secondary-color;
+    padding: 1rem;
+    height: 75px;
+
+    &__p {
+        margin: 0;
+    }
+
+    &--holiday {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}

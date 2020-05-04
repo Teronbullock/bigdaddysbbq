@@ -1,0 +1,76 @@
+/*
+  Location-Section
+	========================================================================== 
+*/
+
+.location {
+    position: relative;
+    background-color: $tertiary-color;
+    margin-bottom: 2rem;
+}
+
+.hours__title,
+.contact__title {
+    padding: 1rem 0;
+    border-bottom: 1px solid $secondary-color;
+}
+
+.social {
+    padding: 1rem;
+
+    &__span {
+        margin: 0 1.5rem;
+    }
+}
+
+@media (min-width: $break-xs) {
+    .social,
+    .contact {
+        margin-top: 1.5rem;
+    }
+}
+
+@media (min-width: $break-m) {
+    .social,
+    .contact {
+        margin-top: 4rem;
+    }
+
+    .location__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hours__title,
+    .contact__title {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact {
+        margin-top: 0rem;
+    }
+}
+
+@media (min-width: $break-xl) {
+    .location {
+        padding-top: 2.5rem;
+    }
+
+    .contact {
+        margin-bottom: 2rem;
+
+        &__p {
+            margin-top: 0.25rem;
+        }
+    }
+
+    social-icons {
+        position: relative;
+        bottom: 125px;
+        left: 20%;
+        width: 100%;
+        display: inline-block;
+    }
+}

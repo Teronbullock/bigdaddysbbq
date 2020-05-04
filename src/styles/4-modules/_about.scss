@@ -1,0 +1,50 @@
+/*
+  About-Section
+	========================================================================== 
+*/
+
+.about {
+    &__header {
+      margin: 0 auto;
+    }
+
+    &__{
+      margin: 1.25rem 0;
+    }
+    
+    &__img {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
+  }
+
+@media (min-width: $break-m) {
+  .about {
+    padding-top: 3rem;
+
+    &__header {
+      width: 50%;
+    }
+
+    &__img {
+      margin-top: 1rem;
+    }
+
+  }
+
+}  
+
+@media (min-width: $break-l) {
+  .about__header {
+    width: 30%;
+  }
+
+}
+
+@media (min-width: $break-xl) {
+  .about__header {
+    width: 25%;
+  }
+ 
+}

@@ -1,0 +1,182 @@
+/*
+  Typography
+	========================================================================== 
+*/
+
+/* ---- font-Family ---- */
+h1 {
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+h2,
+h3 {
+    font-family: "Oswald", sans-serif;
+    font-size: 26px;
+}
+
+p,
+.hours__list,
+.contact__link,
+.menu__content,
+.nav__list {
+    font-family: "montserrat", sans-serif;
+    font-size: 16px;
+}
+
+.header-section__title {
+    font-family: "Oleo Script", cursive;
+    font-size: 32px;
+}
+
+/*---- font-size ----*/
+.nav__list,
+.hero__order {
+    font-size: 20px;
+}
+
+.about__p,
+.menu__content {
+    font-size: 16px;
+}
+
+.footer__p {
+    font-size: 14px;
+    color: #fff;
+}
+
+/*---- font-color----*/
+h1,
+h2,
+h3,
+p,
+.nav__list,
+.hours__list,
+.contact__link {
+    color: $secondary-color;
+}
+
+.hero__link {
+    color: $primary-color;
+}
+
+.location {
+    color: $secondary-color;
+    line-height: 1.25em;
+}
+
+.item__name-desc {
+    color: #757575;
+}
+
+.contact__link:hover {
+    color: $primary-color;
+}
+
+footer {
+    color: $tertiary-color;
+}
+
+/*--- font-styles ---*/
+.hours__list,
+.contact__link,
+.about__p {
+    line-height: 1.8;
+}
+
+.menu__content {
+    line-height: 1.5;
+}
+
+.location__content,
+.header-section__title,
+.about,
+.about__content,
+.nav__li,
+.hero__content {
+    text-align: center;
+}
+
+.hours__title,
+.hours__span {
+    font-weight: 900;
+}
+
+.about__p {
+    text-align: justify;
+    font-weight: 400;
+}
+
+@media (min-width: $break-xs) {
+    .hours__list {
+        font-size: 18px;
+        line-height: 2.2;
+    }
+}
+
+@media (min-width: $break-m) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .nav {
+        &__list {
+            font-size: 20px;
+        }
+
+        &__link {
+            color: #000;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+
+    .hours__title {
+        font-size: 26px;
+    }
+
+    .hours__list,
+    .contact__link {
+        font-size: 20px;
+    }
+
+    .about__p,
+    .hours__list,
+    .contact__link {
+        line-height: 2.2;
+    }
+}
+
+@media (min-width: $break-l) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .main-menu {
+        font-size: 24px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .hours__list,
+    .contact__link {
+        font-size: 16px;
+        line-height: 2;
+    }
+}
+
+@media (min-width: $break-xl) {
+    h1 {
+        font-size: 46px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .hours__list,
+    .contact__link {
+        line-height: 1.8;
+    }
+}

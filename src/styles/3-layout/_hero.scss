@@ -1,0 +1,104 @@
+/*
+  Hero-Section
+	========================================================================== 
+*/
+
+/* ---- keyframes ---- */
+@keyframes logo-animation {
+    0% {
+        opacity: 0;
+        transform: translate(0px, -40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes logo-move-up {
+    0% {
+        transform: translate(0px, 40px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes move-arrow {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* ---- hero ---- */
+.hero {
+    padding: 4.5rem 0 4rem;
+
+    &__content {
+        background-color: $tertiary-color;
+    }
+
+    &__order {
+        margin-top: 2rem;
+    }
+}
+
+.down-arrow__link {
+    display: block;
+}
+
+.down-arrow__link {
+    width: 75px;
+    height: 75px;
+    margin: 1rem auto 0.5rem;
+    animation: move-arrow 0.5s 1s;
+    transform: scale(1);
+}
+
+@media (min-width: $break-xs) {
+    .hero__order,
+    .down-arrow {
+        margin-top: 2.25rem;
+    }
+}
+
+@media (min-width: $break-s) {
+    .hero {
+        padding: 1rem 0 4rem;
+    }
+}
+
+@media (min-width: $break-m) {
+    .hero__order,
+    .down-arrow {
+        margin-top: 4rem;
+    }
+
+    .hero {
+        padding: 4rem 0 0rem;
+
+        &__order {
+            display: none;
+        }
+    }
+
+    .down-arrow {
+        display: none;
+    }
+}
+
+@media (min-width: $break-l) {
+    .hero {
+        padding: 5rem 0 0rem;
+    }
+}
